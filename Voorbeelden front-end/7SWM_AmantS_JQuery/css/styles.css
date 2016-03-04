@@ -1,0 +1,128 @@
+
+/* 
+	Naam oefening
+	===========================		
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+header {
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+}
+
+header h1 {
+	width: 400px;
+	margin: auto;
+	text-align:center;
+	position: absolute;	
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -14px;
+	color: #FFF;
+	font-size: 28px;
+	border: 5px solid white;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.5);
+	display:none;
+	box-shadow: 0px 0 20px black;
+	border-radius: 5px;
+}
+
+#nav {
+	font-size: 14px;
+	max-width: 100%;
+	text-align:center;
+	bottom:0;
+	position:fixed;
+	left:50%;
+	margin-left:-206.5px;
+	bottom:0px;
+	width: 413px;
+	display:none;
+	box-shadow: 0px 0 20px black;
+	border-radius: 5px;
+}
+
+nav {
+	font-size:0;
+	border-radius: 5px;
+	overflow:hidden;
+}
+
+#nav nav a:link,
+#nav nav a:visited {
+	display: inline-block;
+	width: 103px;
+	text-decoration:none;
+	color: #FFF;
+	border:0;
+	padding: 40px 0 10px 0; 
+	font-size: 15px;
+	margin:0;
+}
+
+.nav-home {
+	background-image: url(../images/menu-tab-baked.jpg);
+}
+
+.nav-game-guide {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: -103px 0;
+}
+
+.nav-community {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: -206px 0;
+}
+
+.nav-shop {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: -520px 0;
+	width: 104px;
+}
+
+.nav-home.active {
+	background-position: 0 -130px;
+}
+
+.nav-game-guide.active {
+	background-position: -103px -130px;
+}
+
+.nav-community.active {
+	background-position: -206px -130px;
+}
+
+.nav-shop.active {
+	background-position: -520px -130px;
+}
+
+.nav-home:hover {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: 0px -65px;
+}
+
+.nav-game-guide:hover {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: -103px -65px;
+}
+
+.nav-community:hover {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: -206px -65px;
+}
+
+.nav-shop:hover {
+	background-image: url(../images/menu-tab-baked.jpg);
+	background-position: -520px -65px;
+	width: 104px;
+}
