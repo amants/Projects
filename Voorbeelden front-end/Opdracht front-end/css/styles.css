@@ -1,0 +1,251 @@
+
+/* 
+	Naam oefening
+	===========================		
+*/
+
+* {
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: Arial, Helvetica, Sans-serif;   
+    font-size: 14px;
+    background-color: #e3e3e3;
+}
+
+header {
+    height: 100vh;
+    background-image: url(../images/header_bg.jpg);
+    background-size: cover;
+    border-bottom: 10px solid #313131;
+}
+
+.nav__top {
+    background-color: #313131;   
+}
+
+.nav__center {
+    max-width:960px;   
+    width: 100%;
+    margin:auto;
+}
+
+h2 {
+    font-size: 24px;   
+}
+
+nav {
+    float:left;   
+}
+
+.social__links {
+    float:right;   
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration:none;
+    color: #007da1;
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    border-right: 1px solid black;
+}
+
+nav a:hover {
+    text-decoration: underline;   
+}
+
+nav + a:link,
+nav + a:visited {
+    border-left: 1px solid black;
+}
+
+.social__links {
+    margin-top: 7px;   
+}
+
+.social__links a:link,
+.social__links a:visited {
+    margin-left: 7px;   
+}
+
+nav a.Active {
+    color: #FFF;
+    font-weight: bold;
+    background-color: #007da1;
+    box-shadow: inset 0 0 20px #3D3D3D;    
+    margin-left: -3px;
+}
+
+.parkdrive__text {
+    padding: 10px;
+    width: 590px;
+    margin:auto;
+    margin-top: 45vh;
+    text-align:center;
+    border: 10px solid #007da1;
+    background: rgba(0,0,0,0.5);
+}
+
+.parkdrive__text h1 {
+    font-size: 62px;
+    font-weight: bold;
+    color: #007da1;
+    
+}
+
+.main__container {
+    max-width: 960px;
+    width: 100%;
+    display:block;
+    padding: 75px 0 75px 0;
+    margin: auto;
+}
+
+.main__container div {
+    margin-top: 20px; 
+}
+
+.main__container .box {
+    background-color: #313131;;
+    height: 300px;
+}
+
+.main__bio {
+    width: 62.5%;
+    float:left;
+}
+
+.main__members {
+    float:right;
+    width: 32.5%;
+}
+
+.main__bio p {
+    background-color: #007da1;
+    height: 88%;
+    width: 97%;
+    margin-left: 1.5%;
+    color: #fff;
+    line-height: 160%;
+    font-weight: normal;
+    padding: 20px;
+    box-shadow: inset 0 0 15px #3d3d3d;
+}
+
+.main__bio h3,
+.main__members h3{
+    color: #007da1;
+    font-size: 18px;
+    padding: 5px 0 5px 0;
+    text-align:center;
+}
+
+.main__members ul {
+    list-style: none;  
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.main__members li {
+    line-height: 44px;
+    margin-bottom: 10.6px;
+    background: #007da1;
+    box-shadow: inset 0 0 15px #3d3d3d;
+    color: #FFF;
+}
+
+li img {
+    height: 25px;
+    position: relative;
+    top: 7px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+footer {
+    background: #313131;
+    padding: 20px;
+    text-align:center;
+    color: #007da1;
+}
+
+#not__home {
+    height: 300px;   
+    background-position: 0 -50px;
+}
+
+#not__home .parkdrive__text {
+       margin-top: 70px;
+}
+
+.breadcrumbs {
+    position: relative;
+    top: -50px;   
+    color: #007da1;
+}
+
+.shop__container,
+.tour__container {
+    background-color: #fff;   
+    padding: 20px 0 20px 0;
+    position: relative;
+    top: -50px;
+}
+
+.tour__container {
+}
+
+.shop__container h2,
+.tour__container h2 {
+    margin-left: 30px;
+    color: #007da1;
+    clear:both;
+}
+
+.tour__container img {
+    width: 30%;
+    float:left;
+    margin: 15px;
+}
+
+.shopitem {
+    width: 132px;
+    float:left;
+    margin: 30px;
+}
+
+.shopitem img {
+    max-width: 130px;
+    border: 1px solid darkgray;
+}
+
+.shopitem p {
+    color: #313131;
+    margin-top: 10px;
+}
+
+.shopitem p .price {
+    color: #007da1;
+    font-weight: bold;
+}
+
+h2 #fm {
+    position:relative;
+    top: 80px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+@media screen and (max-width: 1024px) {
+
+}

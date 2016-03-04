@@ -1,0 +1,128 @@
+
+/* 
+	Naam oefening
+	===========================		
+*/
+	*{
+		box-sizing: border-box;
+	}
+
+	.clearfix:before, .clearfix:after {
+    	content: " "; display: table;
+	}
+	.clearfix:after {
+    	clear: both;
+	}
+
+	body{ padding: 30px; }
+
+.main-content {
+	position: relative;
+	width: 800px;
+	margin:auto;
+	height: 650px;
+}
+
+#grass {
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	height: 0px;
+	background: green;
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+#house {
+	position: absolute;
+	bottom: 17.5px;
+	left: 25px;
+	width: 750px;
+	height: 0;
+	background-image: url(../images/bricks.jpg);
+	transition-property: all;
+	transition-duration: .5s;
+	transition-delay: 0.5s;
+}
+
+#roof {
+	position: absolute;
+	left: 25px;
+	bottom: 367.5px;
+	width: 0px; 
+	height: 0px; 
+	border-left: 375px solid transparent;
+	border-right: 375px solid transparent;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-delay: 1s;
+}
+
+#door {
+	height: 0;
+	background: white;
+	border: 0px solid black;
+	border-bottom: none;
+	width: 120px;
+	position: absolute;
+	bottom: 17.5px;
+	right: 100px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-delay: 1.5s;
+}
+
+#window {
+	height: 0px;
+	background: white;
+	border: 0px solid black;
+	width: 350px;
+	position: absolute;
+	bottom: 17.5px;
+	left: 135px;
+	bottom: 97.5px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-delay: 2s;
+}
+
+#sun {
+	height: 0px;
+	position: absolute;
+	width: 0px;
+	background: #F7FE2E;
+	border-radius: 100px;
+	right: 0px;
+	top:0px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-delay: 2.5s;
+}
+
+.main-content:hover #grass {
+	height: 35px;
+}
+
+.main-content:hover #house {
+	height: 350px;
+}
+
+.main-content:hover #roof {
+	border-bottom: 225px solid #000;
+}
+
+.main-content:hover #door {
+	height: 200px;
+	border: 5px solid black;
+}
+
+.main-content:hover #window {
+	height: 120px;
+	border: 5px solid black;
+}
+
+.main-content:hover #sun {
+	height: 100px;
+	width: 100px;
+}
