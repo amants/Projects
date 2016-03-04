@@ -4,12 +4,12 @@
 
 	if(isset($_GET["key"]) && trim($_GET["key"]) != ""){
 
-		$state_key = trim($_GET["key"]);
+		
 
 		// Maak connectie met de database
 		//
-			$conn = new mysqli("localhost", "root", "", "demo_les15");
-
+			$conn = new mysqli("localhost", "les15", "", "demoles15");
+			$state_key = $conn->real_escape_string(trim($_GET["key"]));
 			if ($conn->connect_error) {
 				trigger_error('Kan geen verbinding maken:'.$conn->connect_error, E_USER_ERROR);
 			}
