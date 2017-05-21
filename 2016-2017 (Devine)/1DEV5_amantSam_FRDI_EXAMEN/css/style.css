@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Bebas-Neue";
+  src: url("fonts/bebasneue-regular.woff"),url("fonts/bebasneue-regular.woff2");
+}
+
+@font-face {
+  font-family: "AcaslonProB";
+  src: url("fonts/acaslonpro-bold.woff"), url("fonts/acaslonpro-bold.woff2");
+}
+
+@font-face {
+  font-family: "AcaslonProBI";
+  src: url("fonts/acaslonpro-bolditalic.woff"), url("fonts/acaslonpro-bolditalic.woff2");
+}
+
+@font-face {
+  font-family: "AcaslonPro";
+  src: url("fonts/acaslonpro-regular.woff"), url("fonts/acaslonpro-regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(#009ddc, #add5e5);
+  counter‐reset: test;
+}
+
+header, main section {
+  width: 96rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 0px;
+}
+
+.hidden__title {
+  position: absolute;
+  left:-9999rem;
+  top: -9999rem;
+  opacity: 0;
+}
+
+.container {
+  width: 96rem;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.header__container {
+  padding-top: 5rem;
+  display: flex;
+  width: 75rem;
+  margin:auto;
+  padding-left: 10rem;
+  flex-flow: nowrap;
+  align-content: space-around;
+}
+
+header .header__nav {
+  margin-top: 11.8rem;
+  margin-left: 4rem;
+  font-size: 2rem;
+  color: #000;
+  font-family: "Bebas-Neue", sans-serif;
+}
+
+header .header__nav a:link,header .header__nav a:visited {
+  color: #000;
+  text-decoration:none;
+  border-right: 2px solid #FFF;
+  padding:0 1rem;
+}
+
+header .header__nav a:hover {
+  color: #FFF;
+}
+
+header .header__nav a:last-child {
+  border-right: none;
+}
+
+header .header__nav .magnifier {
+  height: 1.8rem;
+  position: relative;
+  top: 2px;
+}
+
+header .header__nav .search input {
+  width: 0;
+  border: none;
+  transition: .3s all;
+  margin: 0 0 0 1rem;
+  border-radius: .5rem;
+  height: 2rem;
+}
+
+header .header__nav .search:hover input {
+  width: 15rem;
+  border: none;
+}
+
+header .header__nav .search input:focus {
+  width: 15rem;
+  border: none;
+}
+
+.header__steps {
+  width: 96rem;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around;
+}
+
+.header__steps article {
+  width: 10rem;
+  display: block;
+  counter-increment: test;
+  position: relative;
+}
+
+.header__steps article h3 {
+  font-size: 3rem;
+  color: #FFF;
+  text-align: center;
+  font-family: Bebas-Neue, sans-serif;
+}
+
+.header__steps article:before {
+  content: counter(test) "."; /* Display the counter */
+  line-height: 4.5rem;
+  display: block;
+  text-align:center;
+  font-family: Bebas-Neue;
+  font-size: 3rem;
+  color: #FFF;
+  background-color: #000;
+  width: 4rem;
+  margin:auto;
+  height: 4rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header__steps article:after {
+  content: "";
+  left: 12rem;
+  display:block;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/arrow.png");
+  width: 10.8rem;
+  height: 3.2rem;
+}
+
+.header__steps article:last-child:after {
+  width: 0;
+}
+
+.header__steps article p {
+  font-family: AcaslonProBI, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  text-align:center;
+  font-size: 2rem;
+}
+
+main {
+  background: url("../images/wurst.png");
+  margin-top: 5rem;
+  padding: 4rem;
+}
+
+main h2 {
+  text-align:center;
+  font-size: 4rem;
+  margin: 0 0 4rem 0;
+}
+
+main h2, main section.main__dogs h3 {
+  color: #009ddc;
+  font-family: Bebas-Neue, sans-serif;
+}
+
+main section.main__dogs {
+  display: flex;
+  justify-content: space-between;
+  text-align: center
+}
+
+main section.main__dogs article {
+  width: 25rem;
+}
+
+main section.main__dogs article img {
+  border-radius: 13.5rem;
+  border: 1rem solid #009ddc;
+}
+
+main section.main__dogs article h3 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+main section.main__dogs article h3 span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+
+main section.main__dogs article p {
+  font-family: AcaslonPro, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: #FFF;
+}
+
+footer {
+  width: 96rem;
+  margin: auto;
+}
+
+footer section.main__delivery {
+  display: flex;
+  justify-content: space-between;
+  padding: 12rem 0;
+}
+
+footer section.main__delivery .delivery__text {
+  margin-top: 10rem;
+  width: 50rem;
+}
+
+footer section.main__delivery .delivery__text h3 {
+  font-family: Bebas-Neue;
+  font-size: 4rem;
+}
+
+footer section.main__delivery .delivery__text p {
+  font-family: AcaslonPro;
+  font-size: 2.5rem;
+  line-height: 1.7;
+}
+
+footer section.main__delivery .delivery__text p span {
+  font-family: AcaslonProB;
+}

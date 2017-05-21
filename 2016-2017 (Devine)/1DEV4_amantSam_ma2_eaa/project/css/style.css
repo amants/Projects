@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: arial, helvetica, sans-serif;
+}
+
+body {
+  background-color: #717375;
+  font-size: 1.4rem;
+  background-image: url(../images/pattern.png);
+}
+
+header {
+  width: 100vw;
+  background-image: url(../images/header.png);
+  background-position: center center;
+  height: 70rem;
+}
+
+a:link, a:visited {
+  color: #ee5522;
+  text-decoration:none;
+}
+
+header nav {
+  width: 96rem;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  border-bottom: 1px solid #FFF;
+  height: 4.5rem;
+}
+
+header nav a:link,header nav a:visited {
+  color: #000;
+  padding: .5rem;
+  margin: 0 1rem;
+  line-height: 3.3rem;
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align:center;
+  margin:30rem auto;
+  color: #FFF;
+  height: 5rem;
+  line-height: 4.5rem;
+  background-color: rgba(0,0,0,0.3);
+  width: 50rem;
+  border: 2px solid #FFF;
+}
+
+section:nth-child(odd) {
+  background-color: #FFE3BB;
+  background-image: url(../images/pattern.png);
+  background-position: 0rem -2rem;
+}
+
+.center {
+  width: 96rem;
+  margin:auto;
+}
+
+main section {
+  text-align:center;
+  padding: 8rem;
+  line-height: 1.5;
+}
+
+main section h2 {
+  font-weight:bold;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+main section.main__wie h2 {
+  color: #819159;
+}
+
+main section.main__wie p {
+  width: 60%;
+  margin: auto;
+}
+
+main section.main__veilingen {
+  width: 96rem;
+  margin:auto;
+  overflow: hidden;
+  padding-left:0;
+  padding-right: 0;
+  color: #FFE3BB;
+  position: relative;
+}
+
+main section.main__veilingen .previous {
+  position: absolute;
+  left: 32rem;
+  top: 15rem;
+  height: 13rem;
+  width: 5rem;
+  display:none;
+}
+
+main section.main__veilingen .next {
+  position: absolute;
+  left: 59rem;
+  top: 15rem;
+  height: 13rem;
+  width: 5rem;
+}
+
+main section.main__veilingen .next:hover,main section.main__veilingen .previous:hover {
+  cursor: pointer;
+}
+
+main section.main__veilingen h2 {
+  color: #FFE3BB;
+}
+
+main section .veilingen__container article h3 {
+  color: #FFE3BB;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+main section .veilingen__container {
+  display: flex;
+  justify-content: center;
+  width: Calc(5*96rem);
+  transition: 0.3s all;
+}
+
+
+
+main section .veilingen__container article {
+  width: 96rem;
+}
+
+main section .veilingen__container article .countdown {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+main section .veilingen__container article p {
+  width: 50%;
+  margin: auto;
+}
+
+main section .veilingen__container article img {
+  border: .8rem solid #FFE3BB;
+}
+
+.main__biedingen {
+  margin-top: 4rem;
+  padding: 3rem;
+  border: .8rem solid #FFE3BB;
+}
+
+.main__biedingen .biedingen {
+  display: flex;
+}
+
+.main__biedingen .biedingen div {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.main__biedingen .biedingen form {
+  margin-top: 2rem;
+}
+
+.main__biedingen .biedingen input {
+  background-color: rgba(0,0,0,0);
+  border: 3px solid #FFE3BB;
+  height: 3rem;
+  color: #FFE3BB;
+  padding-left: 1rem;
+}
+
+.main__biedingen .biedingen table {
+  width: 100%;
+}
+
+.main__contact h2 {
+  color: #ff1d25;
+}
+
+.main__contact input, .main__contact textarea {
+  display: block;
+  background-color: rgba(0,0,0,0);
+  border: .5rem solid #717375;
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 3rem;
+  padding-left: 1rem;
+}
+
+.main__contact textarea {
+  height: 10rem;
+}
+
+.main__contact input[type="submit"] {
+  background-color: #717375;
+  color: #FFE3BB;
+  font-weight: bold;
+}
